@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 function TaskForm ({onAddTask}) {
     const [title, setTitle ] = useState ('');
     const [dueDate, setDueDate] = useState ('');
-    const [category, setCategory] = useState('Task');
+    const [category, setCategory] = useState('work');
 
 
     const handleAddTask = () => {
@@ -11,7 +11,7 @@ function TaskForm ({onAddTask}) {
             onAddTask(title, dueDate, category); 
                 setTitle('');
                 setDueDate('');
-                setCategory('Task');
+                setCategory('work');
 
             }
         };
@@ -32,8 +32,8 @@ function TaskForm ({onAddTask}) {
                 />
                 <select value = {category} onChange= {(e) => setCategory(e.target.value) }>
                     <option value= "Work">Work</option>
-                    <option value= "Personal">Work</option>
-                    <option value= "School">Work</option>
+                    <option value= "Personal">Personal</option>
+                    <option value= "School">School</option>
                 </select>
                 <button onClick= {handleAddTask}>Add Task</button>
             </div>
