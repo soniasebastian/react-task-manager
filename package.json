@@ -2,6 +2,7 @@
   "name": "task-manager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://soniasebastian.github.io/react-task-manager",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -15,10 +16,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "test": "craco test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
     "start": "craco start",
     "build": "craco build"
   },
