@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Set a pastel background color for the entire app */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the main container for your app */
+.App {
+  background-color: rgb(11, 80, 46);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 100px;
+  width: 95%;
+  margin-top: 2px;
+  text-align: center
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the app title */
+h1 {
+  color: #ced3d6;
+  font-size: 24px;
+  background-color: #e74c3c;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #ced3d6;
+}
+
+p {
+  font-size: 24px;
+  color: black;
+}
+
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 40px;
+}
+
+input,
+select {
+  padding: 15px;
+  display: flex;
+  border: 5px solid #352871;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-left: 60px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.TaskForm button {
+  background-color: #647f92;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding-top: 100px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.TaskForm button:hover {
+  background-color: #2980b9;
+}
+
+/* Style the TaskList component */
+.TaskList table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 100px;
+  max-height: 40px;
+  padding-top: 40px;
+}
+
+
+
+button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #1b9154;
+}
+
+/* Style the TaskFilter component */
+.TaskFilter select {
+  padding: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 800px;
+}
+
+/* Style for the Task List container */
+div {
+  margin: 20px;
+}
+
+/* Style for the table header */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: rgb(19, 131, 42);
+  color: #fff;
+  padding: 10px;
+}
+
+/* Style for the table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for the table data cells */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for the Delete button */
+button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
 }

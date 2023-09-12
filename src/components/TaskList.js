@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 function TaskList ({tasks, onDeleteTask}) {
     if (tasks.length === 0) {
@@ -23,7 +24,7 @@ function TaskList ({tasks, onDeleteTask}) {
                         <td>{task.title}</td>
                         <td>{task.dueDate}</td>
                         <td>{task.category}</td>
-                        <td><button onClick= {() => onDeleteTask(task.id)}></button>
+                        <td><button onClick= {() => onDeleteTask(task.id)}>Delete</button>
                         </td>
                        </tr>
                     ))}

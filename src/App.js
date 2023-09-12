@@ -46,8 +46,14 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <>
+    <div className= "nav">
+       <nav>
       <h1>React Task Manager</h1>
+      </nav>
+    </div>
+    <div className="App">
+     
       <TaskForm onAddTask={handleAddTask} />
       <TaskFilter
         categories={['All', 'Work', 'Personal', 'School']}
@@ -55,6 +61,7 @@ function App() {
       />
       <TaskList tasks={filteredTasks} onDeleteTask={handleDeleteTask} />
     </div>
+    </>
   );
 }
 

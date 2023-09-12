@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import '../App.css'; 
 
 function TaskForm ({onAddTask}) {
     const [title, setTitle ] = useState ('');
@@ -18,7 +19,7 @@ function TaskForm ({onAddTask}) {
 
         return (
             <div>
-                <h2>Add Tasks</h2>
+                <h2>Create Personalised Tasks</h2>
                 <input
                  type="text"
                  placeholder="Task Title"
@@ -35,7 +36,7 @@ function TaskForm ({onAddTask}) {
                     <option value= "Personal">Personal</option>
                     <option value= "School">School</option>
                 </select>
-                <button onClick= {handleAddTask}>Add Task</button>
+                <button onClick= {handleAddTask}>Create Task</button>
             </div>
         )
     }

@@ -1,3 +1,5 @@
+import '../App.css'; 
+
 function Task(id, title, dueDate, category) {
     return {
         id,
